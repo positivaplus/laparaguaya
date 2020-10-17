@@ -1,0 +1,1317 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.light{
+  font-weight:lighter !important;
+}
+.bold{
+  font-weight:bold !important;
+}
+body{
+  background-color: white;
+}
+.lapya-body{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+/*INDEX*/
+/*toolbar*/
+.header-section, .footer-section{
+  position: absolute;
+  width: 100%;
+  height: 80pt;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  z-index: 100;
+}
+.header-inner{
+  background-color: #213f6f;
+  width: 100%;
+  height: 100%;
+}
+.footer-items-container{
+  width: 100%;
+  height: 100%;
+  padding-left:30pt;
+  padding-right: 30pt;
+  position: relative;
+}
+.lapya-pages{
+  position: absolute;
+  right: 80pt;
+  height: 100%;
+}
+.lapya-pages-opt{
+  color: #fff;
+  display: inline-block;
+  height: 100%;
+  font-weight: lighter;
+  cursor: pointer;
+  position: relative;
+}
+.lapya-pages-opt:hover{
+  background-color: rgba(255,255,255,0.2);
+  display: inline-block;
+  height: 100%;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.page-opt-string{
+  padding-left: 10pt;
+  padding-right: 10pt;
+  padding-top: 30pt;
+  font-size: 16px;
+  position: relative;
+}
+.lapya-pages-opt:hover .page-opt-bar{
+  display: block;
+}
+.page-opt-bar{
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  padding-left: -10px;
+  top: 0;
+  display: none;
+}
+.opt-expanded div{
+  color: #fff;
+  font-weight:lighter;
+  font-size: 14px;
+  padding: 5pt;
+}
+.opt-expanded div:hover{
+  background-color: rgba(255,255,255,0.2);
+}
+.opt-expanded{
+  position: absolute;
+  left: auto;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 13px;
+  text-align: left;
+  background-color: #213f6f;
+  border: 1px solid transparent;
+  border-radius: 0;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  margin-top: 31pt;
+  margin-left: -1pt;
+}
+.lapya-pages-opt:nth-child(2):hover .opt-expanded,.lapya-pages-opt:nth-child(4):hover .opt-expanded {
+  display: block;
+}
+.lapya-logo{
+  background-image: url("../img/icons/logo-pya.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  font-weight: lighter;
+  height: 100%;
+  width: 220pt;
+}
+.lapya-address{
+  color: #fff;
+  display: inline-block;
+  font-weight: lighter;
+  height: 100%;
+  width: 150pt;
+}
+.lapya-address .glyphicon{
+  font-size: 28px;
+  position: absolute;
+  display: inline-block;
+  padding-top: 26pt;
+  padding-left: 10pt;
+}
+.lapya-address .desc{
+  position: absolute;
+  display: inline-block;
+  font-weight: bolder;
+  padding-top: 20pt;
+  padding-left: 37pt;
+  font-size: 32px;
+}
+.lapya-social{
+  width: 20pt;
+  height: 20pt;
+  position: absolute;
+  right: 30pt;
+  top: 30pt;
+}
+.fb-icon{
+  width: 100%;
+  height: 100%;
+  background-image:url('../img/icons/facebook.png');
+  background-position:center;
+  background-size:contain;
+}
+.footer-section .glyphicon-earphone{
+margin-top: 5px;
+  font-size: 28px;
+  color: #fff;
+}
+.footer-section .glyphicon-envelope{
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+.footer-section .glyphicon-pushpin{
+  font-size: 28px;
+  color: #fff;
+}
+.content{
+  color: #fff;
+  font-size: 18px;
+}
+.footer-section .desc{
+  font-size: 36px;
+  margin-left: 10pt;
+}
+.lapya-footer-string{
+  position: absolute;
+  top: 30pt;
+  right: 80pt;
+  color: #fff;
+  font-size: 18px;
+}
+/*hamburguer-toolbar*/
+.hamburguer-toolbar{
+  background-color: #0474bb;
+  display: none;
+  top:16pt;
+  left: 30pt;
+  position: absolute;
+}
+.hamburguer-toolbar-inner{
+  position: relative;
+  width: 50pt;
+  height: 50pt;
+  z-index: 1030;
+}
+.hamb-stick-1, .hamb-stick-2, .hamb-stick-3{
+  position: absolute;
+  width: 77%;
+  height: 3px;
+  margin-left: 10%;
+  background-color: white;
+}
+.hamb-stick-1{
+margin-top: 30%;
+}
+.hamb-stick-2{
+margin-top: 47%;
+}
+.hamb-stick-3{
+  margin-top: 65%;
+}
+.full-screen-menu{
+  position:fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #213f6f;
+  display: none;
+  z-index: 100;
+}
+.hamb-opt{
+  margin-top: 5%;
+  color: white;
+  font-size: 20px;
+}
+.hamb-close{
+  position: absolute;
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  top:7%;
+  display: none;
+  z-index: 150;
+}
+/*slider*/
+.slider-section{
+  width: 100%;
+  height: 500pt;
+  background-color:#213f6f;
+}
+#home-carousel{
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#home-carousel .item img{
+   width: 100%;
+   max-height: 500pt;
+}
+#home-carousel .owl-controls{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.big-img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat:no-repeat;
+  /*background-size:contain;*/
+  /*background-size:cover;*/
+}
+
+
+
+
+
+
+#slide-1{
+  background-image: url("../img/corona.jpg");
+  background-size:contain;
+}
+#slide-2{
+  background-image: url("../img/pexels-photo.jpg");
+}
+#slide-3{
+  background-image: url("../img/pexels-photo.jpg");
+}
+#slide-4{
+    background-image: url("../img/corona.jpg");
+}
+#slide-nosotros{
+  background-image: url("../img/portada-nosotros.jpg");
+}
+#slide-seguros{
+  background-image: url("../img/corona.jpg") !important;
+}
+#slide-siniestros{
+  background-image: url("../img/portada-siniestros.jpg");
+  background-size:cover;
+}
+#slide-agencias{
+  background-image: url("../img/banner-agencias.jpg");
+}
+#slide-contacto{
+  background-image: url("../img/banner-contacto.jpg");
+}
+.item-child{
+  width: 350pt;
+  position: absolute;
+  top:200pt;
+  left: 100pt;
+  text-align: center;
+}
+.item-child .big{
+  font-size: 4rem;
+  color: #003663;
+  line-height: 40px;
+}
+.item-child .small{
+  font-size: 2rem;
+  color: #fff;
+  line-height: 25px;
+}
+.leermas-btn{
+  height: 25pt;
+  width: 80pt;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: rgba(255,255,255,0);
+  color: #fff;
+  border: solid 1px #fff;
+}
+/*lapya-info-home*/
+.lapya-info-home{
+  width: 100%;
+  padding-top: 20pt;
+}
+.lapya-info-home .lapya-info-title, .lapya-info-home .row .leermas-btn{
+  text-align: center;
+}
+.lapya-info-title{
+  color: #003663;
+  padding-top: 20pt;
+}
+.lapya-info-text{
+  font-size: 20px;
+  padding-top: 20pt;
+}
+.row{
+  margin: 0;
+  padding-top: 40pt;
+}
+.leermas-btn{
+  height: 40pt;
+  width: 130pt;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: #003663;
+  color: #fff;
+  border: solid 1px #fff;
+  margin-left:20pt;
+  margin-top: 20pt;
+}
+.img-table{
+  width: 100%;
+  margin-top: 40pt;
+  padding-bottom: 80pt;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-1 {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+.column-2 {
+  flex: 18%;
+  max-width: 18%;
+  padding: 0 4px;
+}
+.column-3 {
+  flex: 22%;
+  max-width: 22%;
+  padding: 0 4px;
+}
+.column-4 {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column .img-grid {
+  margin-top: 8pt;
+  vertical-align: middle;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*column-1*/
+.img-grid-1{
+  width: 100%;
+  height: 350pt;
+  background-image: url("../img/img-cuadro/img1.png");
+}
+/*column-2*/
+.img-grid-2{
+  width: 100%;
+  height: 150pt;
+  background-image: url("../img/img-cuadro/img2.png");
+}
+.img-grid-3{
+  width: 100%;
+  height: 192pt;
+  background-image: url("../img/img-cuadro/img3.png");
+}
+/*column-3*/
+.img-grid-4{
+  width: 100%;
+  height: 210pt;
+  background-image: url("../img/img-cuadro/img4.png");
+}
+.img-grid-5{
+  width: 100%;
+  height: 132pt;
+  background-image: url("../img/img-cuadro/img5.png");
+}
+/*column-4*/
+.img-grid-6{
+  width: 100%;
+  height: 100pt;
+  background-image: url("../img/img-cuadro/img6.png");
+}
+.img-grid-7{
+  width: 100%;
+  height: 242pt;
+  background-image: url("../img/img-cuadro/img7.png");
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*products section*/
+.products-section{
+  width: 100%;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  position: relative;
+}
+.products-inner-section{
+  width: 100%;
+  background-color: #ebebeb;
+  position: relative;
+}
+.productos-title{
+  text-align: center;
+  width: 200pt;
+  border: solid 1px #003663;
+  position: absolute;
+  font-size: 28pt;
+  font-weight:bolder;
+  padding: 5pt;
+  top: -27pt;
+  left: 39%;
+  background-color: #fff;
+  color: #003663;
+}
+.products-inner-section  .lapya-info-text{
+  padding-top: 60pt;
+  text-align: center;
+}
+.products-slide-container{
+  width: 100%;
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+.products-slide-container .row{
+  padding-bottom: 10pt;
+}
+.product-card{
+  height: 300pt;
+  width: 100%;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+}
+.product-img{
+  width: 100%;
+  height: 270pt;
+  position: relative;
+  padding-left: 15pt;
+  padding-right: 15pt;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reaseguros .product-card{
+  margin-top: 0;
+  height: 150pt;
+  margin-bottom: 20pt;
+  margin-top: 30pt;
+}
+.reaseguros .product-img{
+  height: 100pt;
+}
+.reaseguros .product-name{
+}
+.product-desc{
+  z-index: 100;
+}
+.prod-1{
+  background-image: url("../img/product-cards/prod-vida.png");
+}
+.prod-2{
+  background-image: url("../img/product-cards/prod-maquila.png");
+}
+.prod-3{
+  background-image: url("../img/product-cards/prod-caucion.png");
+}
+.prod-15{
+  background-image: url("../img/product-cards/producto-5.png");
+}
+.prod-16{
+  background-image: url("../img/product-cards/producto-2.png");
+}
+.prod-17{
+  background-image: url("../img/product-cards/prod-caucion.png");
+}
+.prod-4{
+  background-image: url("../img/product-cards/prod-riesgo.png");
+}
+.prod-5{
+  background-image: url("../img/product-cards/prod-civil.png");
+}
+.prod-6{
+  background-image: url("../img/product-cards/prod-accidentes.png");
+}
+
+.prod-7{
+  background-image: url("../img/product-cards/prod-cristales.png");
+}
+.prod-8{
+  background-image: url("../img/product-cards/prod-transporte.png");
+}
+.prod-9{
+  background-image: url("../img/product-cards/producto-4.png");
+}
+.prod-10{
+  background-image: url("../img/product-cards/prod-robo-autos.png");
+}
+.prod-11{
+  background-image: url("../img/product-cards/prod-trans-urbano.png");
+}
+.prod-12{
+  background-image: url("../img/product-cards/prod-accidentes.png");
+}
+.prod-12{
+  background-image: url("../img/product-cards/incendios.png");
+}
+
+
+
+
+.product-name{
+  width: 100%;
+}
+.product-name .product-title{
+  color: #003663;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 25pt;
+  font-weight: bolder;
+}
+.product-name .product-desc{
+  font-size: 17px;
+  text-align: center;
+}
+.product-card .leermas-btn{
+  margin-top: 10pt;
+  font-size: 18px;
+  width: 100pt;
+  margin-left: 30%;
+  height: 30pt;
+  position: absolute;
+  bottom: 0;
+}
+/*polizas-denuncias*/
+.denuncias-polizas{
+  width: 100%;
+  position: relative;
+  padding-top: 4pt;
+  padding-bottom: 100pt;
+}
+.denuncias-btn, .polizas-btn{
+  width: 270pt;
+  height: 50pt;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.denuncias-btn{
+  position: absolute;
+  color: #fff;
+  background-color: #9e0b0f;
+  border: 2px solid #9e0b0f;
+  right: 350pt;
+  border:0;
+}
+.polizas-btn{
+  color: #003663;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #003663;
+}
+/*SERVICIO GRUA*/
+.servicio-grua{
+  padding-left: 300pt;
+}
+.grua-img{
+  width: 350pt;
+  height: 250pt;
+  background-image: url("../img/producto-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.servicio-grua .lapya-info-text{
+  text-align:left;
+  padding-top: 20pt;
+  color: #003663;
+  font-size: 18px;
+  padding-bottom: 50pt;
+}
+
+/*footer*/
+
+/*INDEX END*/
+/*NOSOTROS*/
+.lapya-content-container{
+  width: 100%;
+  background-color: #fff;
+}
+.empresa{
+  width: 100%;
+  padding-top: 30pt;
+
+}
+.directorio{
+  width: 100%;
+  padding-top: 30pt;
+  height: 343pt;
+}
+.lapya-content-title{
+  padding-top: 20pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  color: #003663;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+.lapya-content-text{
+  padding-top: 30pt;
+  padding-left: 22%;
+  padding-right: 20%;
+  font-size: 22px;
+  color: #003663;
+}
+.empresa .lapya-content-text{
+  font-size: 18px;
+  padding-left: 25%;
+  padding-right: 20%;
+}
+.empresas-somos-block{
+  margin-top: 30pt;
+  width: 470pt;
+  height: 150pt;
+  margin-left: 30%;
+}
+.empresa-img{
+  width: 30%;
+  height: 100%;
+  background-color: red;
+  margin-right: 5pt;
+  display: inline-block;
+  background-image: url("../img/cuadro-casas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.directorio-tile-1{
+  padding-left: 5%;
+  display: inline-block;
+  color: #003663;
+  font-size: 18px;
+}
+.directorio-tile-2{
+  height: 250pt;
+  width: 280pt;
+  display: inline-block;
+  color: #003663;
+  font-size: 18px;
+  margin-left: 21%;
+}
+.directorio-title{
+  font-weight: bolder;
+  padding-top: 20pt;
+}
+.directorio-tile-1 .lapya-content-text, .directorio-tile-2 .lapya-content-text{
+  padding: 0;
+}
+/*NOSOTROS END*/
+/*SINIESTROS*/
+.siniestros{
+  width: 100%;
+  padding-top: 30pt;
+}
+.siniestros .lapya-content-text{
+  color: grey;
+  font-size:20px;
+  padding-left: 27%;
+}
+.siniestros .denuncias-polizas{
+  padding-top: 20pt;
+  padding-bottom: 0pt;
+}
+.asistencia-btn{
+  background-color: orange;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bolder;
+  width: 270pt;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  text-align: center;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+  margin-left: 36%;
+}
+.circular-map{
+  margin-top: 30pt;
+  margin-bottom: 100pt;
+  width: 300pt;
+  height: 300pt;
+  border-radius: 200px;
+  background-image: url("../img/mapa.png");
+  margin-left: 35%;
+}
+/*SINIESTROS END*/
+/*PRODUCTOS*/
+.seguros,.reaseguros{
+  width: 100%;
+  padding-top: 30pt;
+}
+.seguros .lapya-content-text{
+  text-align: center;
+  /*padding-left: 0;*/
+}
+.seguros .products-slide-container{
+  padding-left: 100pt;
+  padding-right: 100pt;
+}
+.seguros .products-slide-container .product-card{
+  padding-top: 20pt;
+}
+.reaseguradoras-img{
+  background-size: contain;
+  background-image: url("../img/reaseguradora.jpg");
+}
+.reaseguradoras-img1{
+  background-size: contain;
+  background-image: url("../logos/allied-world.png");
+}
+.reaseguradoras-img2{
+  background-size: contain;
+  background-image: url("../logos/ms-amlin.png");
+}
+.reaseguradoras-img3{
+  background-size: contain;
+  background-image: url("../logos/qbe.png");
+}
+.reaseguradoras-img3{
+  background-size: contain;
+  background-image: url("../logos/qbe.png");
+  margin-bottom: 15px;
+}
+
+.reaseguradoras-img4{
+  background-size: contain;
+  background-image: url("../logos/sirius.png");
+  margin-bottom: 15px;
+}
+
+/*PRODUCTOS END*/
+/*AGENCIAS*/
+.agencias{
+  width: 100%;
+  padding-top: 30pt;
+}
+.agencias .btn-default{
+  margin-left: 10pt;
+}
+.googlemaps-container{
+  margin-top: 20pt;
+  width: 100%;
+  height: 400pt;
+  margin-bottom: 100pt;
+}
+#map-canvas{
+  width: 100%;
+  height: 100%;
+}
+
+/*AGENCIAS END*/
+/*CONTACTO*/
+.contacto{
+  width: 100%;
+  padding-top: 30pt;
+  padding-left: 40pt;
+}
+.contacto .lapya-content-text{
+  font-size: 18px;
+  padding-left: 0;
+  margin-bottom: 15pt;
+}
+.lapya-input{
+  border: 1px solid #003663;
+  background-color:#fff;
+  width: 450pt;
+  height: 30pt;
+  font-size: 22px;
+  border-radius: 12px;
+}
+.lesspadding{
+  padding-top: 10pt;
+}
+.mensaje{
+  height: 120pt;
+}
+.btn-enviar{
+  margin-top: 20pt;
+  margin-bottom: 100pt;
+  color: #fff;
+  border: 0;
+  background-color: #003663;
+  height: 30pt;
+  width: 110pt;
+  border-radius:12px;
+  font-size: 18px;
+  font-weight: bolder;
+  display: block;
+}
+/*CONTACTO END*/
+
+#inicio .modal-dialog{
+  width: 90%;
+}
+.modal-content{
+  background-color: rgba(255, 255, 255, 1);
+}
+.modal-backdrop.in{
+  opacity: .1;
+}
+.modal-header{
+  border-bottom: 0;
+}
+.modal-header h2{
+  font-size: 38px;
+  font-weight: bold;
+  margin-left: 20pt;
+  margin-top: 10pt;
+}
+.modal-body h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 20pt;
+  margin-top: 25pt;
+}
+.modal{
+  color: #00468E;
+}
+.modal .modal-dialog .modal-content .modal-body .row div p{
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 10pt;
+}
+.inline-block{
+  display: inline-block !important;
+}
+.modal .row input{
+  font-size: 22px;
+  font-weight: lighter;
+  background-color: #e6e6e6;
+  border: 0;
+  width: 100%;
+  margin-left: 10pt;
+  padding: 5pt 15pt;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.input-narracion{
+  font-size: 22px;
+  font-weight: lighter;
+  background-color: #e6e6e6;
+  border: 0;
+  width: 100%;
+  margin-left: 20pt;
+  padding: 5pt 15pt;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.chat-img{
+  position: absolute;
+  bottom: 0;
+  right: 45pt;
+  z-index: 9999;
+}
+
+.images {
+display: block;
+margin: 0px;
+padding: 0px;
+vertical-align:middle;
+}
+#content {
+display: absolute;
+margin: 0px;
+margin-top: 10pt;
+padding: 0px;
+position: absolute;
+top: 0px;
+height: auto;
+max-width: auto;
+overflow-y: hidden;
+overflow-x:auto;
+word-wrap:normal;
+white-space:nowrap;
+}
+.phoneicon{
+  background-image: url('../img/icons/phone-call.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 18pt;
+  width: 18pt;
+}
+.mailicon{
+  background-image: url('../img/icons/mail.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 18pt;
+  width: 18pt;
+  margin-top: 5pt;
+}
+.mapicon{
+  background-image: url('../img/icons/placeholder.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 18pt;
+  width: 18pt;
+  margin-top: 5pt;
+}
+/*RESPONSIVE SECTION*/
+@media screen and (max-width: 1240px) {
+  .lapya-logo{
+    width: 150pt;
+    background-size: contain;
+  }
+  .lapya-address{
+    width: 100pt;
+  }
+  .lapya-address .desc{
+    font-size: 28px;
+    padding-top: 25pt;
+  }
+  .lapya-address .glyphicon{
+    font-size: 20px;
+    padding-top: 32pt;
+  }
+  .page-opt-string{
+    padding-top: 33pt;
+    font-size: 14px;
+  }
+  .productos-title{
+    left: 37%;
+  }
+  .empresas-somos-block{
+    margin-left: 27%;
+  }
+  .directorio-tile-2{
+    height: 250pt;
+    width: 280pt;
+    display: inline-block;
+    color: #003663;
+    font-size: 18px;
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .footer-items-container{
+    padding: 0;
+  }
+  .lapya-social{
+    right: 0pt;
+  }
+  .lapya-pages{
+    right: 40pt;
+  }
+  .lapya-address .desc{
+    font-size: 20px;
+    padding-top: 30pt;
+    padding-left: 24pt;
+  }
+  .lapya-address .glyphicon{
+    font-size: 15px;
+    padding-top: 35pt;
+  }
+  .empresas-somos-block{
+    margin-left: 25%;
+  }
+  .circular-map{
+    margin-left: 25%;
+  }
+  .reaseguros .product-card{
+    height: auto;
+  }
+  .product-card{
+    height: auto;
+  }
+}
+@media screen and (max-width: 943px) {
+  .header-address {
+    display: none;
+  }
+  .page-opt-string{
+    padding-top: 33pt;
+    font-size: 12px;
+  }
+  .productos-title{
+    left: 34%;
+  }
+  .hidinginfo{
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .polizas-btn{
+    margin-bottom: 40pt;
+    margin-left: 20%;
+    margin-top: 60pt;
+
+  }
+  .denuncias-btn{
+    right: auto;
+    margin-left: 19%;
+
+  }
+  .directorio-tile-2{
+    margin-top: 80pt;
+  }
+}
+/*tablets*/
+@media screen and (max-width: 768px) {
+  .lapya-pages{
+    display: none;
+  }
+  .lapya-logo{
+    margin-left: 70pt;
+  }
+  .hamburguer-toolbar{
+    display: block;
+  }
+  .productos-title{
+    left: 30%;
+  }
+  .servicio-grua{
+    padding-left: 5%;
+  }
+  .footer-section .lapya-social{
+    top: 5pt;
+    right: auto;
+    left: 10pt;
+  }
+  .footer-section .lapya-address .glyphicon{
+    padding-top: 35pt;
+  }
+  .footer-section .lapya-address .desc{
+    padding-top: 30pt;
+    padding-left: 20pt;
+  }
+  .lapya-footer-string{
+    top: 50pt;
+  }
+  .empresa .lapya-content-text{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .empresas-somos-block{
+    margin-left: 10%;
+  }
+  .directorio-tile-1{
+    margin-left: 5%;
+    width: auto;
+  }
+  .directorio-tile-2{
+    margin-left: 5%;
+    width: auto;
+  }
+  .circular-map{
+    margin-left: 10%;
+  }
+  .lapya-input{
+    width: 80%;
+  }
+  .googlemaps-container{
+    margin-top: 60pt;
+  }
+}
+/*mobile*/
+@media screen and (max-width: 600px) {
+  .productos-title{
+    left: 20%;
+  }
+  .lapya-footer-string{
+    font-size: 12px;
+  }
+  .servicio-grua{
+    padding-left: 4%;
+  }
+  .grua-img{
+    width: 95%;
+  }
+  .denuncias-btn{
+    margin-left: 2%;
+  }
+  .polizas-btn{
+    margin-left: 2%;
+    margin-bottom: 25px;
+  }
+  .directorio{
+    height: 570pt;
+  }
+  .circular-map{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  .seguros .products-slide-container{
+    padding-left: 10pt;
+    padding-right: 10pt;
+  }
+  .slider-section{
+    height: 350pt;
+  }
+  .item-child{
+    width: 350pt;
+    position: absolute;
+    top:100pt;
+    left: -30pt;
+    text-align: center;
+  }
+  .img-table{
+    display: none;
+  }
+  .products-section{
+    padding-top: 50pt;
+  }
+  .lapya-info-home .row .leermas-btn{
+    margin-left: 1%;
+  }
+  .productos-title{
+    left: 29%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 530px) {
+  .lapya-info-home .row .leermas-btn{
+    margin-left: -1%;
+  }
+  .productos-title{
+    left: 25%;
+    width: auto;
+  }
+  .googlemaps-container{
+    margin-top: 150pt;
+  }
+}
+@media screen and (max-width: 500px) {
+  .directorio{
+    height: 720pt;
+  }
+}
+@media screen and (max-width: 450px) {
+  .products-section{
+    padding-left:0;
+    padding-right: 0;
+  }
+  .polizas-btn, .denuncias-btn{
+    width: 200pt;
+    font-size: 18px;
+    margin-left: 15%;
+  }
+  .footer-section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .agencias .directorio-tile-1,.agencias .directorio-tile-2{
+    width: 350pt;
+    margin-left: 5%;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .productos-title{
+    left: 22%;
+    width: auto;
+  }
+  .polizas-btn, .denuncias-btn{
+    margin-left: 12%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .lapya-logo{
+    margin-left: 50pt;
+  }
+  .hamburguer-toolbar{
+    left: 20pt;
+  }
+  .header-section .lapya-social{
+    display: none;
+  }
+  .margindiv{
+    display: none;
+  }
+  .info-home-text .lapya-info-text {
+    margin-left: 10%;
+  }
+  .info-home-text .leermas-btn{
+    margin-left: 20%;
+  }
+  .lapya-info-home .row .leermas-btn{
+    margin-left: 25%;
+  }
+  .productos-title{
+    left: 15%;
+    width: auto;
+  }
+  .circular-map{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: contain;
+  }
+  .item-child{
+    left: -100pt;
+  }
+  .item-child .big{
+    font-size: 2rem;
+    color: #003663;
+    line-height: 20px;
+  }
+  .polizas-btn, .denuncias-btn{
+    margin-left: 9%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .polizas-btn, .denuncias-btn{
+    margin-left: 1%;
+  }
+  .agencias .directorio-tile-2{
+    margin-top: 130pt;
+  }
+}
+
+
+.bloque {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  /* align-items: center; */
+}
+
+.modulo {
+  width: 760px;
+}
+
+.glyphicon {
+  right: 10px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
